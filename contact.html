@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Sashakt Residential Programme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e0;
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+        }
+
+        .form-text {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Sashakt</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about-program">The Program</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="about.html">Meet Rajini</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li><a href="contact.html" class="btn btn-accent small">Apply Now</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 4rem 0; background-color: var(--color-bg-alt);">
+        <div class="container" style="max-width: 800px;">
+            <div style="background: white; padding: 3rem; border-radius: 1rem; box-shadow: var(--shadow-md);">
+                <div class="section-header">
+                    <h1>Application Form</h1>
+                    <p>Take the first step towards independence. Fill out the form below to apply for the next cohort or
+                        schedule a consultation.</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Parent Name(s)*</label>
+                        <input type="text" class="form-control" required placeholder="e.g. Rahul & Priya Sharma">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label class="form-label">Email Address*</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number*</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label class="form-label">Child's Name*</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Child's Age*</label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Autism Diagnosis?*</label>
+                        <select class="form-control" required>
+                            <option value="">Please select...</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No / Waiting for diagnosis</option>
+                        </select>
+                        <input type="text" class="form-control" style="margin-top: 0.5rem;"
+                            placeholder="If yes, date of diagnosis (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Current Challenges*</label>
+                        <p class="form-text">Briefly describe the main behaviors or skills you want to address.</p>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Preferred Package</label>
+                        <select class="form-control">
+                            <option value="A">Package A: Child + One Parent (₹1.5 Lakhs)</option>
+                            <option value="B">Package B: Child + Both Parents (₹3.0 Lakhs)</option>
+                            <option value="Consult">I just want a Consultation Call first</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Preferred Start Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">How did you hear about us?</label>
+                        <select class="form-control">
+                            <option>Google Search</option>
+                            <option>Social Media</option>
+                            <option>Doctor Referral</option>
+                            <option>Friend / Family</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Additional Questions</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-accent" style="width: 100%; font-size: 1.1rem;">Submit
+                            Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Simplified) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2024 Sashakt Autism Intervention. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
